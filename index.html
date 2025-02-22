@@ -1,8 +1,80 @@
-<html>
-    <title>
-        Hare Krishna Hare Krishna
-        Krishna Krishna Hare Hare
-        Hare Rama Hare Rama
-        Ram Ram Hare Hare
-    </title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid.js: Visualizing Diagrams with Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mermaid.js: Visualizing Diagrams with Text</h1>
+            <p>Learn how to create diagrams using text-based syntax with Mermaid.js</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Introduction</h2>
+            <p>Mermaid.js is a JavaScript library that allows you to create diagrams and visualizations using text-based syntax. In this blog post, we’ll explore how Mermaid.js can help you generate flowcharts, sequence diagrams, Gantt charts, and more with just a few lines of text.</p>
+
+            <h2>Installation & Setup</h2>
+            <p>To get started with Mermaid.js, follow these steps:</p>
+            <ol>
+                <li>Install Mermaid.js via npm or use the CDN in your HTML file.</li>
+                <li>For npm: <code>npm install mermaid</code></li>
+                <li>For CDN: 
+                    <pre><code>&lt;script type="module"&gt;
+                        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+                        mermaid.initialize({startOnLoad:true});
+                    &lt;/script&gt;</code></pre>
+                </li>
+            </ol>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Simple text-based syntax for generating diagrams.</li>
+                <li>Supports Flowcharts, Sequence Diagrams, Gantt Charts, and more.</li>
+                <li>Integrates seamlessly with Markdown, Jupyter Notebooks, and HTML.</li>
+            </ul>
+
+            <h2>Code Example</h2>
+            <p>Here’s an example of how to create a simple flowchart with Mermaid.js:</p>
+            <pre><code>```mermaid
+graph LR
+    A[Start] --> B[Process 1]
+    B --> C[Process 2]
+    C --> D[End]
+```</code></pre>
+
+            <h2>Screenshots</h2>
+            <p>Here’s a screenshot of the flowchart generated from the above code:</p>
+            <img src="flowchart-example.png" alt="Example Flowchart">
+
+            <h2>Use Cases</h2>
+            <p>Mermaid.js can be used in a variety of scenarios:</p>
+            <ul>
+                <li><strong>Documentation:</strong> Easily embed diagrams in Markdown files.</li>
+                <li><strong>Project Planning:</strong> Create Gantt charts to visualize timelines.</li>
+                <li><strong>Software Development:</strong> Visualize interactions with sequence diagrams.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Mermaid.js is a powerful tool for generating diagrams in a text-based format. It’s simple to use and integrates well with many platforms like Markdown, Jupyter Notebooks, and more. Whether you're documenting code, planning a project, or visualizing workflows, Mermaid.js can help you create clear and concise diagrams.</p>
+
+            <h2>References & Further Reading</h2>
+            <ul>
+                <li><a href="https://mermaid-js.github.io/mermaid/" target="_blank">Official Mermaid Documentation</a></li>
+                <li><a href="https://github.com/mermaid-js/mermaid" target="_blank">Mermaid GitHub Repository</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Created by Your Name | © 2025</p>
+        </div>
+    </footer>
+</body>
 </html>

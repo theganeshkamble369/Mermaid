@@ -1,0 +1,107 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Section Titles */
+h2 {
+    color: #2980B9;
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+/* Paragraphs and Lists */
+p, ul, ol {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+code {
+    background-color: #ecf0f1;
+    padding: 2px 6px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background-color: #ecf0f1;
+    padding: 10px;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
