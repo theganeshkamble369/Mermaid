@@ -19,6 +19,11 @@
             <h2>Introduction</h2>
             <p>Mermaid.js is a JavaScript library that allows you to create diagrams and visualizations using text-based syntax. In this blog post, we’ll explore how Mermaid.js can help you generate flowcharts, sequence diagrams, Gantt charts, and more with just a few lines of text.</p>
 
+            <div class="card">
+                <h3>Why Use Mermaid.js?</h3>
+                <p>Mermaid.js simplifies the creation of diagrams and allows for easy integration with various platforms like Markdown, Jupyter Notebooks, and HTML. It's ideal for generating complex diagrams without needing a graphical tool.</p>
+            </div>
+
             <h2>Installation & Setup</h2>
             <p>To get started with Mermaid.js, follow these steps:</p>
             <ol>
@@ -32,25 +37,68 @@
                 </li>
             </ol>
 
-            <h2>Key Features</h2>
-            <ul>
-                <li>Simple text-based syntax for generating diagrams.</li>
-                <li>Supports Flowcharts, Sequence Diagrams, Gantt Charts, and more.</li>
-                <li>Integrates seamlessly with Markdown, Jupyter Notebooks, and HTML.</li>
-            </ul>
+            <h2>Code Examples with Outputs</h2>
 
-            <h2>Code Example</h2>
-            <p>Here’s an example of how to create a simple flowchart with Mermaid.js:</p>
+            <!-- Example 1: Flowchart -->
+            <h3>Example 1: Flowchart</h3>
+            <p>This is an example of a simple flowchart using Mermaid.js:</p>
             <pre><code>```mermaid
 graph LR
     A[Start] --> B[Process 1]
     B --> C[Process 2]
     C --> D[End]
 ```</code></pre>
+            <img src="Output.png" alt="Flowchart Example">
+
+            <!-- Example 2: Sequence Diagram -->
+            <h3>Example 2: Sequence Diagram</h3>
+            <p>Here’s a sequence diagram demonstrating interactions between Alice and John:</p>
+            <pre><code>```mermaid
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    John-->>-Alice: I'm good, thanks for asking!
+```</code></pre>
+            <img src="example2.png" alt="Sequence Diagram Example">
+
+            <!-- Example 3: Gantt Chart -->
+            <h3>Example 3: Gantt Chart</h3>
+            <p>This is an example of a Gantt chart that can be used for project management:</p>
+            <pre><code>```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2025-02-01, 30d
+    Another task     :after a1  , 20d
+```</code></pre>
+            <img src="example3.png" alt="Gantt Chart Example">
+            <!-- Example 4: Pie Chart -->
+            <h3>Example 4: Pie Chart</h3>
+            <p>Mermaid.js can also create pie charts. Here's an example:</p>
+            <pre><code>```mermaid
+pie
+    title Distribution of Market Share
+    "Product A" : 35
+    "Product B" : 25
+    "Product C" : 40
+```</code></pre>
+            <img src="example4.png" alt="Pie Chart Example">
+
+            <!-- Example 5: Class Diagram -->
+            <h3>Example 5: Class Diagram</h3>
+            <p>Here’s a class diagram showing the relationship between classes in an object-oriented system:</p>
+            <pre><code>```mermaid
+classDiagram
+    ClassA <|-- ClassB
+    ClassA : +int x
+    ClassB : +int y
+    ClassB : +int sum()
+```</code></pre>
+            <img src="example5.png" alt="Class Diagram Example">
 
             <h2>Screenshots</h2>
             <p>Here’s a screenshot of the flowchart generated from the above code:</p>
-            <img src="output.png" alt="Example Flowchart">
+            <img src="Output.png" alt="Example Flowchart">
 
             <h2>Use Cases</h2>
             <p>Mermaid.js can be used in a variety of scenarios:</p>
@@ -58,6 +106,7 @@ graph LR
                 <li><strong>Documentation:</strong> Easily embed diagrams in Markdown files.</li>
                 <li><strong>Project Planning:</strong> Create Gantt charts to visualize timelines.</li>
                 <li><strong>Software Development:</strong> Visualize interactions with sequence diagrams.</li>
+                <li><strong>Education:</strong> Explain complex workflows and processes in a simple way.</li>
             </ul>
 
             <h2>Conclusion</h2>
